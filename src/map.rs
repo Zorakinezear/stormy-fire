@@ -16,6 +16,7 @@ use log::info;
 pub enum Layers {
     Ground = 0,
     Floor,
+    Trees,
     Collision1,
     Collision2,
     Items,
