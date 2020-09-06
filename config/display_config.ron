@@ -1,0 +1,4 @@
+(
+  title: "Stormy Fire",
+  dimensions: Some((800, 600)),
+)

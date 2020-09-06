@@ -1,0 +1,19 @@
+[package]
+name = "stormy_fire"
+version = "0.1.0"
+authors = ["Alex Zorakin, Virtual-State <virtually.stateless@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+amethyst = {version = "0.15.2", features = ["no-slow-safety-checks"]}
+log = { version = "0.4.8", features = ["serde"] }
+tiled = { git = "https://github.com/mattyhall/rs-tiled" }
+
+
+[features]
+default = ["vulkan"]
+empty = ["amethyst/empty"]
+metal = ["amethyst/metal"]
+vulkan = ["amethyst/vulkan"]
